@@ -1,4 +1,3 @@
-
 function palindrome(str) {
       //I think removes characters and convert to lower case
   var strLowerCase = str.replace(/[^a-zA-Z0-9]+/g, '').toLowerCase();
@@ -9,7 +8,5 @@ function palindrome(str) {
   return false;
 }
 }
-
-
 
 palindrome("not a palindrone");
