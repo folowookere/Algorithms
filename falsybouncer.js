@@ -1,3 +1,5 @@
+//Solution for Falsy Bouncer freecodecamp algorithm
+
 function bouncer(arr) {
   // Don't show a false ID to this bouncer.
   newArray = arr.filter(function(myArgument) {
