@@ -2,11 +2,11 @@
 
 function bouncer(arr) {
   // Don't show a false ID to this bouncer.
-  newArray = arr.filter(function(myArgument) {
+  var newArray = arr.filter(function(myArgument) {
 
 
   	return (Boolean(myArgument) === true);
-  })
+  });
   return newArray;
 }
 
