@@ -31,5 +31,5 @@ int main(int argc, string argv[])
         result *= i;
     }
     while (i > 1);
-     printf("%lli\n", result);
+        printf("%lli\n", result);
 }
