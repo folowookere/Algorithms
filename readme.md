@@ -1,1 +1,1 @@
-Solutions to Freecodecamp Algorithms
+Solutions to Algorithms for practice
