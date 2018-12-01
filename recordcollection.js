@@ -1,4 +1,4 @@
-// Setup
+// Setup record collection
 var collection = {
     "2548": {
       "album": "Slippery When Wet",
@@ -27,15 +27,17 @@ var collection = {
 // Keep a copy of the collection for tests
 var collectionCopy = JSON.parse(JSON.stringify(collection));
 
-// Only change code below this line
+// Function to update records
 function updateRecords(id, prop, value) {
   if(prop === "tracks" && value !== "") {
+    // if collection id and prop are there push the value to the array
     if(collection[id][prop]) {
       collection[id][prop].push(value);
     }
     else  {
       collection[id][prop] = [value];
     }
+    // If no value exists delete it
   } else if (value !== "") {
     collection[id][prop] = value;
 } else {
