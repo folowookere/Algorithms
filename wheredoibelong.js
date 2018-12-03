@@ -6,9 +6,12 @@ function getIndexToIns(arr, num) {
   arr.push(num);
   
   // Sort array into ascending order
-  arr.sort(function(a, b){return a - b});
+  arr.sort(function(a, b) {
+    return a - b;
+  });
   
   // Find my place in this sorted array.
+  // Return index of num in new sorted array
   return arr.indexOf(num);
 }
 
