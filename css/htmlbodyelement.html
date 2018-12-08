@@ -1,14 +1,17 @@
-// All html pages have a body element that can be styled
+/* All html pages have a body element that can be styled,
+ Classes override body style elements */
 
 <html>
 <style>
-  body {
-    background-color: black;
-    color:green;
-    font-family:monospace;
+  .pink-text {
+    color:pink;
   }
 
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
 </style>
-
-<h1>Hello World</h1>
+<h1 class="pink-text">Hello World!</h1>
 </html>
