@@ -1,17 +1,22 @@
 /* All html pages have a body element that can be styled,
- Classes override body style elements */
+ Classes override body style elements
+ Browsers read css from top to bottom
+ Whichever declaration is last is applied */
 
 <html>
 <style>
-  .pink-text {
-    color:pink;
-  }
-
   body {
     background-color: black;
     font-family: monospace;
     color: green;
   }
+  .pink-text {
+    color: pink;
+  }
+
+  .blue-text {
+    color: blue;
+  }
 </style>
-<h1 class="pink-text">Hello World!</h1>
+<h1 class="pink-text blue-text">Hello World!</h1>
 </html>
