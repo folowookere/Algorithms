@@ -1,7 +1,8 @@
 /* All html pages have a body element that can be styled,
  Classes override body style elements
  Browsers read css from top to bottom
- Whichever declaration is last is applied */
+ Whichever declaration is last is applied
+ Ids always take top precedence */
 
 <html>
 <style>
@@ -10,13 +11,17 @@
     font-family: monospace;
     color: green;
   }
+
+  #orange-text {
+    color:orange;
+  }
+
   .pink-text {
     color: pink;
   }
-
   .blue-text {
     color: blue;
   }
 </style>
-<h1 class="pink-text blue-text">Hello World!</h1>
+<h1 class="pink-text blue-text" id="orange-text">Hello World!</h1>
 </html>
