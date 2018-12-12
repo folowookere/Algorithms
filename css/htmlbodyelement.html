@@ -2,7 +2,8 @@
  Classes override body style elements
  Browsers read css from top to bottom
  Whichever declaration is last is applied
- Ids always take top precedence */
+ Ids always take top precedence over classes 
+ Inline styles take precedence over ids and classes */
 
 <html>
 <style>
@@ -11,11 +12,9 @@
     font-family: monospace;
     color: green;
   }
-
   #orange-text {
-    color:orange;
+    color: orange;
   }
-
   .pink-text {
     color: pink;
   }
@@ -23,5 +22,5 @@
     color: blue;
   }
 </style>
-<h1 class="pink-text blue-text" id="orange-text">Hello World!</h1>
+<h1 id="orange-text" class="pink-text blue-text" style="color:white;">Hello World!</h1>
 </html>
