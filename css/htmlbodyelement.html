@@ -3,7 +3,8 @@
  Browsers read css from top to bottom
  Whichever declaration is last is applied
  Ids always take top precedence over classes 
- Inline styles take precedence over ids and classes */
+ Inline styles take precedence over ids and classes
+ !important overrides all of these other options */
 
 <html>
 <style>
@@ -16,7 +17,7 @@
     color: orange;
   }
   .pink-text {
-    color: pink;
+    color: pink!important;
   }
   .blue-text {
     color: blue;
