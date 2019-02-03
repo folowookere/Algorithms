@@ -1,13 +1,22 @@
 /* Using css variables to change several elements at once */
 
 <style>
-
-/* Cascading css variables */
   :root {
-    
-    /* add code below */
-   --penguin-belly:pink;
-    /* add code above */
+    --penguin-size: 300px;
+    --penguin-skin: gray;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+  }
+  
+  @media (max-width: 350px) {
+    :root {
+      /* media query to change size and skin color */
+      /* add code below */
+      --penguin-size:200px;
+      --penguin-skin:black;
+      /* add code above */
+      
+    }
   }
   
 
